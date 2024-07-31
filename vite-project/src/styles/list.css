@@ -32,16 +32,16 @@
  border: 1px solid rgb(179, 179, 179);
  
   margin-right: 16px;
-  color: blue;
+  color: rgb(81, 174, 225);
 }
 
 .icon svg {
-  width: 30px; /* Increased width */
-  height: 30px; /* Increased height */
+  width: 30px; 
+  height: 30px; 
 }
 
 .content {
-  flex: 1; /* Ensures the content takes up the remaining space */
+  flex: 1; 
 }
 
 .content h1 {
