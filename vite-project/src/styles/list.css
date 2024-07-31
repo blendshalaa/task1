@@ -1,67 +1,66 @@
 .App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; 
-    padding: 16px; 
-  }
-  
-  .item-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-    max-width: 1200px; 
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  padding: 16px; 
+}
+
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1200px; 
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  flex: 1 1 calc(33.333% - 32px); 
+  box-sizing: border-box;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Increased width */
+  height: 60px; /* Increased height */
+  border-radius: 50%; /* Ensures the element is perfectly round */
+ border: 1px solid rgb(142, 137, 137);
+  margin-right: 16px;
+  color: blue;
+}
+
+.icon svg {
+  width: 30px; /* Increased width */
+  height: 30px; /* Increased height */
+}
+
+.content {
+  flex: 1; /* Ensures the content takes up the remaining space */
+}
+
+.content h1 {
+  margin: 0 0 8px 0;
+  font-size: 1.2em;
+}
+
+.content p {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 1024px) {
   .item {
-    display: flex;
-    align-items: center;
-    padding: 10px;
- 
-   
-    flex: 1 1 calc(33.333% - 32px); 
-    box-sizing: border-box;
+    flex: 1 1 calc(50% - 32px); 
   }
-  
-  .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: #eee;
-    margin-right: 16px;
-    background-color: rgb(205, 226, 234);
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex: 1 1 calc(100% - 32px); 
   }
-  
-  .icon svg {
-    width: 20px; 
-    height: 20px;
-    
-  }
-  
-  .content h1 {
-    margin: 0 0 8px 0;
-    font-size: 1.2em;
-  }
-  
-  .content p {
-    margin: 0;
-    color: #666;
-  }
-  
- 
-  @media (max-width: 1024px) {
-    .item {
-      flex: 1 1 calc(50% - 32px); 
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .item {
-      flex: 1 1 calc(100% - 32px); 
-    }
-  }
-  
+}
